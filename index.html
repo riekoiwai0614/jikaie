@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>ジカイエ</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content=",,,">
+<meta name="description" content="ディスクリプション">
+
+<!--▼△▼△▼△▼△▼△▼△▼△▼△▼△▼△▼△▼△▼△▼△▼△▼△▼△▼△▼△▼△-->
+<meta name="robots" content="noindex,nofollow"><!-- 本アップ前に必ず外す -->
+<!--▼△▼△▼△▼△▼△▼△▼△▼△▼△▼△▼△▼△▼△▼△▼△▼△▼△▼△▼△▼△-->
+
+<!-- OGP -->
+<meta property="og:type" content="website"><!-- トップページであれば「website」-->
+<meta property="og:title" content="レスポンシブサイト"><!-- titleと文字数も揃える -->
+<meta property="og:site_name" content="レスポンシブサイト"><!-- サイト名 -->
+<meta property="og:url" content="">
+<meta property="og:image" content=""><!-- 1200x630推奨 -->
+<meta property="og:description" content="ディスクリプション">
+
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+<link rel="stylesheet" href="./css/default.css">
+<link rel="stylesheet" href="./css/style.css" media="screen,print">
+<link rel="stylesheet" href="./css/slick-theme.css" media="screen,print">
+<link rel="stylesheet" href="./css/slick.css" media="screen,print">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css">
+
+
+<link rel="shortcut icon" href="./img/favicon.ico">
+<link rel="icon" type="image/png" href="./img/favicon.png">
+<link rel="apple-touch-icon-precomposed" href="./img/apple-touch-icon-152x152.png">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="./js/response.min.js"> </script>
+<script src="./js/pageTop.js"></script>
+<script src="./js/slip.js"></script>
+<script src="./js/over.js"></script>
+<script src="./js/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+<script src="./js/jquery.mousewheel.js"></script><!-- マウスホイール用 -->
+<script src="./js/jquery.jscrollpane.min.js"></script><!-- スクロールバー用 -->
+
+<script>
+
+	//スクロールバー
+	$(document).ready(function(){
+		$('.scroll-pane').jScrollPane({
+        showArrows : true // 矢印の有無
+	    });
+	});
+
+</script>
+
+
+<!--[if lt IE 9]>
+<script src="./js/html5.js"></script>
+<script src="./js/css3-mediaqueries.js"></script>
+<![endif]-->
+
+</head>
+
+
+
+<body id="pTop" class="website" data-responsejs='{ "create": [ { "prop": "width", "prefix": "src", "lazy": true, "breakpoints": [0,592,1001] } ]}'>
+
+
+
+<!-- header -->
+<header>
+	<div class="hLogo"><img src="img/logo.png" alt="ジカイエ"></div>
+	<ul class="headerUl">
+		<li class="menuBtn sp">
+			<a class="menu-trigger" href="#">
+				<span></span>
+				<span></span>
+				<span></span>
+			</a>
+
+		<nav class="gnav">
+			<div class="gnav__wrap">
+				<ul class="gnav__menu f700">
+					<li>
+						<ul class="btn_bg">
+							<li><a class="login" href="#">ログイン</a></li>
+							<li><a class="ownerLogin" href="#">オーナーログイン</a></li>
+						</ul>
+					</li>
+					<li>
+						<ul class="btn_bg">
+							<li><a class="toroku header_btn" href="shinki">新規登録</a></li>
+							<li><a class="contact header_btn" href="contact.php">お問合せ</a></li>
+						</ul>
+					</li>
+					<li class="gnav__menu__item"><a href="about.html">不動産システムについて</a></li>
+					<li class="gnav__menu__item"><a href="search.html">お部屋を探す</a></li>
+					<li class="gnav__menu__item"><a href="topics.html" class="btn03">トピックス</a></li>
+				</ul>
+			</div><!--gnav-wrap-->
+		</nav>
+		</li>
+	</ul>
+
+
+
+
+<!-- nav -->
+<nav class="pc">
+	<ul class="loginBtn">
+		<li><a class="login" href="#">ログイン</a></li>
+		<li><a class="ownerLogin" href="#">オーナーログイン</a></li>
+	</ul>
+	<ul class="navBox">
+		<li class="gnav__menu__item"><a href="about.html">不動産システムについて</a></li>
+		<li class="gnav__menu__item"><a href="search.html">お部屋を探す</a></li>
+		<li class="gnav__menu__item"><a href="topics.html" class="btn03">トピックス</a></li>
+		<li class="header_btn btn01"><a href="shinki">新規登録</a></li>
+		<li class="header_btn btn02"><a href="contact.php">お問合せ</a></li>
+	</ul>
+</nav>
+<!-- /nav -->
+</header><!-- /header -->
+
+
+<!-- cover -->
+<div id="cover">
+	<p><img src="img/mv.png" alt="スマホで宅建士とマッチングしてお部屋を探す新しい形"></p>
+</div>
+<!-- /cover -->
+
+
+<div id="main">
+	<section class="content01">
+		<div class="inner">
+			<h2 class="mainTit arrow_box">
+				お部屋を決めて、<span class="marker">気になる宅建士を選ぶ</span>だけ！<br>
+				あとは宅建士が<span class="marker">オンラインの契約を処理</span>してくれます♪
+			</h2>
+			<p>
+				<img src="img/content01.png" alt="住まいを選ぶ、宅建士を選ぶ、新しい生活のスタート">
+			</p>
+			<p class="o_btn"><a href="#">詳しくはこちら</a></p>
+		</div>
+	</section>
+
+	<section class="content02">
+		<div class="inner">
+			<h2 class="mainTit arrow_box02">
+				ジカイエってなに？
+				<span>不動産屋を使わない為、<span class="yellow">コストを抑えて、手間も少なく</span><br>
+					自分のお好きな宅建士を選んでお住まいを選べます。</span>
+			</h2>
+			<ul>
+				<li>
+					<dl class="no01">
+						<dt><span class="marker">宅建士が選べる</span></dt>
+						<dd class="icon icon01"><img src="img/content02_1.png" alt="宅建士が選べる"></dd>
+						<dd>
+							このシステムの特徴としまして、宅建士を選んでマッチングした宅建士にオンラインで契約することが可能です。
+						</dd>
+					</dl>
+				</li>
+				<li>
+					<dl class="no02">
+						<dt><span class="marker">対面なしで入居が可能</span></dt>
+						<dd class="icon icon02"><img src="img/content02_2.png" alt="対面なしで入居が可能"></dd>
+						<dd>
+							このシステムの特徴としまして、宅建士を選んでマッチングした宅建士にオンラインで契約することが可能です。
+						</dd>
+					</dl>
+				</li>
+
+				<li>
+					<dl class="no03">
+						<dt><span class="marker">安心の管理体制</span></dt>
+						<dd class="icon icon03"><img src="img/content02_3.png" alt="安心の管理体制"></dd>
+
+						<dd>
+							このシステムの特徴としまして、宅建士を選んでマッチングした宅建士にオンラインで契約することが可能です。
+						</dd>
+					</dl>
+				</li>
+				<li>
+					<dl class="no04">
+						<dt><span class="marker">お得にお住まい探しができる</span></dt>
+						<dd class="icon icon04"><img src="img/content02_4.png" alt="お得にお住まい探しができる"></dd>
+						<dd>
+							このシステムの特徴としまして、宅建士を選んでマッチングした宅建士にオンラインで契約することが可能です。
+						</dd>
+					</dl>
+				</li>
+				<li>
+					<dl class="no05">
+						<dt><span class="marker">チャットで相談が可能</span></dt>
+						<dd class="icon icon05"><img src="img/content02_5.png" alt="チャットで相談が可能"></dd>
+						<dd>
+							このシステムの特徴としまして、宅建士を選んでマッチングした宅建士にオンラインで契約することが可能です。
+						</dd>
+					</dl>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="content03">
+		<div class="inner">
+		<h2 class="mainTit">
+				HOW TO
+				<span>ジカイエの使い方</span>
+		</h2>
+			<div class="">
+				<ul>
+					<li>
+						<p>
+							<a href="guide.html"><img src="img/content03_1.png" alt="利用方法について">
+								<span>利用方法について<br><span class="en">GUIDE</span></span>
+							</a>
+						</p>
+					</li>
+					<li>
+						<p>
+							<a href="question.html"><img src="img/content03_2.png" alt="よくある質問">
+								<span>よくある質問<br><span class="en">QandA</span></span>
+							</a>
+						</p>
+					</li>
+					<li>
+						<p>
+							<a href="voice.html"><img src="img/content03_3.png" alt="ご利用者様の声">
+								<span>ご利用者様の声<br><span class="en">VOICE</span></span>
+							</a>
+						</p>
+					</li>
+				</ul>
+				<p class="tourokuBnr">
+					<a href="#">
+						<img src="img/toroku_bnr.png" alt="会員登録はこちら">
+						<span class="toroku_bnr"><img src="img/easy.png" alt="簡単登録"></span>
+					</a>
+				</p>
+
+			</div>
+		</div>
+	</section>
+	
+	<section class="content04">
+		<div class="inner">
+		<h2 class="mainTit">
+				SEARCH
+				<span>住まいを探す</span>
+		</h2>
+			<div class="serch">
+				<ul>
+					<li>
+						<dl class="search01">
+							<dt>借りたい</dt>
+							<dd><a href="#">新品</a></dd>
+							<dd><a href="#">中古</a></dd>
+						</dl>
+					</li>
+					<li>
+						<dl class="search02">
+							<dt>買いたい</dt>
+							<dd><a href="#">新品</a></dd>
+							<dd><a href="#">中古</a></dd>
+						</dl>
+					</li>
+				</ul>
+				<p class="sellBtn"><a href="#">売る</a></p>
+			</div>
+		</div>
+	</section>
+
+	<section class="content05">
+		<div class="inner">
+		<h2 class="mainTit">
+			TOPICS
+			<span>トピックス</span>
+		</h2>
+			<div class="">
+				<ul>
+					<li>
+						<p>
+							<a href="#"><img src="img/content05_1.png" alt="家を選ぶ時のポイント">
+								<span class="category">カテゴリ</span>
+								<span class="day">2021/10/01</span>
+								<span class="title">家を選ぶ時のポイント</span>
+							</a>
+						</p>
+					</li>
+					<li>
+						<p>
+							<a href="#"><img src="img/content05_2.png" alt="家を選ぶ時のポイント">
+								<span class="category">カテゴリ</span>
+								<span class="day">2021/10/01</span>
+								<span class="title">家を選ぶ時のポイント</span>
+							</a>
+						</p>
+					</li>
+					<li>
+						<p>
+							<a href="#"><img src="img/content05_3.png" alt="家を選ぶ時のポイント">
+								<span class="category">カテゴリ</span>
+								<span class="day">2021/10/01</span>
+								<span class="title">家を選ぶ時のポイント</span>
+							</a>
+						</p>
+					</li>
+				</ul>
+				<p class="o_btn"><a href="#">詳しくはこちら</a></p>
+			</div>
+		</div>
+	</section>
+
+	<section class="content06">
+		<div class="inner">
+			<h2 class="mainTit arrow_box06">
+				宅建士登録はこちら
+				<span>物件のご案内をしたい方はこちらのページをご覧ください</span>
+			</h2>
+				<ul>
+					<li>
+						<img src="./img/content06_1.png" alt="宅建士の免許が活かせる">
+					</li>
+					<li>
+						<img src="./img/content06_2.png" alt="日本中どこでもお仕事が可能">
+					</li>
+					<li>
+						<img src="./img/content06_3.png" alt="副業としてお仕事が可能">
+					</li>
+					<li>
+						<img src="./img/content06_4.png" alt="運営会社がバックアップ">
+					</li>
+				</ul>
+				<p class="o_btn"><a href="#">宅建士紹介ページはこちら</a></p>
+				</div>
+				
+			<div class="bnrBOX">
+				<ul>
+					<li>
+						<a href="#"><img src="img/content07_1.png" alt="オーナー様募集中"></a>
+					</li>
+					<li>
+						<a href="#"><img src="img/content07_2.png" alt="オーナー様募集中"></a>
+					</li>
+					<li>
+						<a href="#"><img src="img/content07_3.png" alt="オーナー様募集中"></a>
+					</li>
+					<li>
+						<a href="#"><img src="img/content07_4.png" alt="オーナー様募集中"></a>
+					</li>
+				</ul>
+			</div>
+	</section>
+
+	<section class="content08">
+		<div class="inner">
+			<h2 class="mainTit">
+				CONTACT
+				<span>お問い合わせはこちら</span>
+			</h2>
+			<ul>
+				<li>
+					<dl>
+						<dt class="arrow_box08">サポートダイヤル</dt>
+						<dd><span class="tel">0120-111-111</span>
+						<span class="openTime">平日：10:00-20:00</span>
+						</dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt class="arrow_box08">メールでのお問合せ</dt>
+						<dd class="contactbtn"><a href="#">お問合せ</a></dd>
+					</dl>
+				</li>
+
+			</ul>
+		</div>
+	</section>
+
+</div><!-- /#main -->
+
+
+
+<p id="pageTop"><a href="#pTop"><img src="./img/pagetop.png" alt="ページトップへ"></a></p>
+
+
+<!-- footer -->
+<footer>
+	<div class="inner">
+		<div class="footerLeft">
+			<p class="logo"><img src="img/footer_logo.png" alt="ジカイエ"></p>
+			<ul class="footerLogin">
+				<li><a href="#"><span class="login">ログイン</span></a></li>
+				<li><a href="#">オーナーログイン</a></li>
+				<li class="contact_btn"><a href="#">お問合せ</a></li>
+			</ul>
+		</div>
+		<ul class="footerRight">
+			<li>
+				<dl>
+					<dt>不動産システムについて</dt>
+					<dd><a href="">不動産システムについて</a></dd>
+					<dd><a href="">流れについて</a></dd>
+					<dd><a href="">お客様の声</a></dd>
+					<dd><a href="">よくある質問</a></dd>
+				</dl>
+			</li>
+			<li>
+				<dl>
+					<dt>探す</dt>
+					<dd><a href="">賃貸</a></dd>
+					<dd><a href="">買う（戸建・マンション）</a></dd>
+					<dd><a href="">買う・中古（戸建・マンション）</a></dd>
+					<dd><a href="">土地</a></dd>
+				</dl>
+			</li>
+			<li>
+				<dl>
+					<dt>エリア</dt>
+					<dd><a href="">関西</a></dd>
+					<dd><a href="">大阪</a></dd>
+					<dd><a href="">兵庫</a></dd>
+					<dd><a href="">京都</a></dd>
+					<dd><a href="">奈良</a></dd>
+					<dd><a href="">滋賀</a></dd>
+				</dl>
+			</li>
+			<li>
+				<dl>
+					<dt>トピックス</dt>
+					<dd><a href="">一覧</a></dd>
+					<dd><a href="">カテゴリ</a></dd>
+					<dd><a href="">カテゴリ</a></dd>
+					<dd><a href="">カテゴリ</a></dd>
+					<dd><a href="">カテゴリ</a></dd>
+				</dl>
+			</li>
+
+		</ul>
+	</div>
+
+	<div class="aboutPage">
+		<ul>
+			<li><a href="">運営会社</a></li>
+			<li><a href="">個人情報取り扱い</a></li>
+			<li><a href="">サイトマップ</a></li>
+		</ul>
+		<p class="copyright"><small>&copy; 2021ジカイエ.All Right Reserver.</small></p>
+	</div>
+</footer>
+<!-- /footer -->
+
+
+<script src="./js/data-img.js"></script>
+<script src="./js/script.js"></script>
+<!-- /slide_menu -->
+<script src="./js/flickity-docs.min.js"></script>
+
+
+</body>
+</html>
